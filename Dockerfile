@@ -2,11 +2,12 @@
 # FROM openjdk:8-jdk-alpine
 
 # For Java 11, try this
-FROM adoptopenjdk/openjdk11:alpine-jre
+FROM openjdk:17
 
 # Refer to Maven build -> finalName
 ARG JAR_FILE=target/spring-boot-web.jar
 
+ADD target/spring-boot-web.jar spring-boot-web.jar
 # cd /opt/app
 WORKDIR /opt/app
 
