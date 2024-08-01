@@ -7,7 +7,7 @@ FROM openjdk:17
 # Refer to Maven build -> finalName
 ARG JAR_FILE=target/spring-boot-web.jar
 
-ADD target/spring-boot-web.jar spring-boot-web.jar
+#ADD target/spring-boot-web.jar spring-boot-web.jar
 # cd /opt/app
 WORKDIR /opt/app
 
